@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel=”icon” href=””> 
-	<script src="https://kit.fontawesome.com/5e926ca2ef.js" crossorigin="anonymous"></script>
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 </head>
 <body>
 <!-- Header -->
@@ -37,39 +37,11 @@
 			<p class="language"><span>Ru</span> | Eng</p>
 		</div>
 
-		<div class="carousel">
-			<div class="carousel-inner">
-				<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-				<div class="carousel-item">
-					<img src="img/slider/2.jpg">
-				</div>
-				<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-				<div class="carousel-item">
-					<img src="img/slider/1.jpg">
-				</div>
-				<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-				<div class="carousel-item">
-					<img src="img/slider/3.jpg">
-				</div>
-				<label for="carousel-3" class="carousel-control prev control-1">‹</label>
-				<label for="carousel-2" class="carousel-control next control-1">›</label>
-				<label for="carousel-1" class="carousel-control prev control-2">‹</label>
-				<label for="carousel-3" class="carousel-control next control-2">›</label>
-				<label for="carousel-2" class="carousel-control prev control-3">‹</label>
-				<label for="carousel-1" class="carousel-control next control-3">›</label>
-				<ol class="carousel-indicators">
-					<li>
-						<label for="carousel-1" class="carousel-bullet">•</label>
-					</li>
-					<li>
-						<label for="carousel-2" class="carousel-bullet">•</label>
-					</li>
-					<li>
-						<label for="carousel-3" class="carousel-bullet">•</label>
-					</li>
-				</ol>
-			</div>
-		</div> <!-- \ caroysel -->
+		<div class="fotorama" data-height="500">
+			<img src="../hesoyam.github.io/img/slider/1.jpg">
+			<img src="../hesoyam.github.io/img/slider/2.jpg">
+			<img src="../hesoyam.github.io/img/slider/3.jpg">
+		</div>
 	</div>
 </section>
 
@@ -368,4 +340,7 @@
 		</div>
 	</div>
 </footer>
+	<script src="https://kit.fontawesome.com/5e926ca2ef.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </body>
