@@ -451,3 +451,32 @@ body {
   font-size: 14px;
   color: #828282;
 }
+
+
+
+
+
+
+
+/* Навести тут порядок */
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.portfolio__liks {
+  margin-top: 10px;
+}
+.portfolio__liks a {
+  text-decoration: none;
+}
+.portfolio__liks img:hover {
+  transform: scale(1.05);
+  transition: .3s
+}
+.portfolio__liks p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
