@@ -22,9 +22,15 @@ body {
 
 .section {
   width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-.about-me {
+.section--intro {
+  width: 100%;
+}
+
+.section--about-me {
   width: 100%;
   height: 506px;
   margin-top: 100px;
@@ -32,24 +38,11 @@ body {
   background-color: #F6F6F6;
 }
 
-.all-skills {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
 .portfolio {
   background-color: #F6F6F6;
-  width: 100%;
-  height: auto;
-  text-align: center;
 }
 
-.footer {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
+/* container */
 
 .container {
   max-width: 944px;
@@ -141,6 +134,7 @@ body {
   width: 310px;
   margin: 0;
 }
+
 .short-info {
   width: 175px;
   font-weight: 500;
@@ -155,6 +149,7 @@ body {
   font-size: 15px;
   font-weight: 800;
 }
+
 .language span {
   color: #828282;
 }
@@ -358,7 +353,25 @@ body {
 /* SECTION Portfolio */
 
 .portfolio__inner {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+}
+
+.portfolio__liks {
+  margin-top: 10px;
+}
+.portfolio__liks a {
+  text-decoration: none;
+}
+.portfolio__liks img:hover {
+  transform: scale(1.05);
+  transition: .3s
+}
+.portfolio__liks p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.portfolio__liks p span {
+  font-weight: 500;
 }
 
 .layout {
@@ -397,9 +410,17 @@ body {
   background: #000; 
 }
 
+/* скрытие кнопки и всех работ в потртфолио */
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
 /* FOOTER */
 
-.footer__text {
+.contacts__text {
   margin-bottom: 50px;
   font-weight: 500;
 }
@@ -452,31 +473,3 @@ body {
   color: #828282;
 }
 
-
-
-
-
-
-
-/* Навести тут порядок */
-
-.hidden {
-  display: none;
-}
-.visible {
-  display: block;
-}
-.portfolio__liks {
-  margin-top: 10px;
-}
-.portfolio__liks a {
-  text-decoration: none;
-}
-.portfolio__liks img:hover {
-  transform: scale(1.05);
-  transition: .3s
-}
-.portfolio__liks p {
-  font-size: 17px;
-  margin-bottom: 5px;
-}
