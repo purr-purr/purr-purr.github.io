@@ -220,10 +220,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto; }
+  height: auto;
+  max-height: 600px; }
 
 .large-photo {
-  width: 100%; }
+  width: 100%;
+  max-height: 600px; }
   .large-photo__wrapper {
     -ms-flex-preferred-size: 67%;
         flex-basis: 67%; }
@@ -249,6 +251,8 @@ body {
     line-height: 30px;
     padding: 15px;
     margin-top: 50px; }
+  .card__wrapper--third {
+    margin-top: 37px; }
   .card__title {
     font-size: 18px;
     font-weight: 700;
@@ -329,8 +333,8 @@ body {
     display: -ms-flexbox;
     display: flex; }
   .shop__inner {
-    max-width: 530px;
-    max-height: 535px; }
+    max-width: 533px;
+    max-height: 536px; }
 
 .shop__invite {
   height: 200px;
@@ -361,6 +365,7 @@ body {
     font-family: 'Lato', sans-serif;
     border: 1px solid #d3d7d9;
     margin-top: 37px;
+    padding-left: 15px;
     height: 66px;
     width: 400px;
     background: #ffffff !important;
@@ -369,16 +374,16 @@ body {
     color: #d3d7d9; }
     .feedback__input::-webkit-input-placeholder {
       color: #d3d7d9;
-      padding-left: 25px; }
+      padding-left: 10px; }
     .feedback__input:-ms-input-placeholder {
       color: #d3d7d9;
-      padding-left: 25px; }
+      padding-left: 10px; }
     .feedback__input::-ms-input-placeholder {
       color: #d3d7d9;
-      padding-left: 25px; }
+      padding-left: 10px; }
     .feedback__input::placeholder {
       color: #d3d7d9;
-      padding-left: 25px; }
+      padding-left: 10px; }
 
 .feedback__button {
   background-color: #64c29e;
@@ -457,6 +462,14 @@ body {
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+            justify-content: center; }
+
+  .shop__inner--responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
             justify-content: center; } }
 /* 850px - 1150px */
 @media screen and (max-width: 1150px) {
@@ -469,10 +482,15 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    max-height: 1000px; }
 
   .about__news {
-    padding: 120px 20px 140px 20px; } }
+    padding: 120px 20px 140px 20px; }
+
+  .shop__inner--responsive {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 /* 540px - 850px */
 @media screen and (max-width: 850px) {
   .desktop-nav {
