@@ -1,7 +1,7 @@
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -141,6 +141,7 @@ body {
   font-size: 47px;
   width: 310px;
   margin: 0;
+  font-weight: 700;
 }
 
 .short-info {
@@ -339,6 +340,10 @@ body {
   color: #070707;
 }
 
+.skill__inner:hover .skill__logo {
+  transform: scale(1.05);
+}
+
 .skill__title {
   margin-top: 22px;
   color: #828282;
@@ -485,3 +490,18 @@ body {
   color: #828282;
 }
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: .3;
+  position: fixed;
+  bottom: 50px;
+  right: 35px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../img/icons/Circle-icons-arrow-up.svg') no-repeat;
+}
+
+.scrollup:hover {
+  opacity: .8;
+}
