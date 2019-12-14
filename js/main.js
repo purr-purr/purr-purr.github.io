@@ -34,4 +34,14 @@ $(document).ready(function(){
                 }
     });
 
+
+    // $(".nav__li--show").click(function(){
+    //     $(".menu_state_open").removeClass("menu_state_open"); return false;
+    // });
+
 });;
+
+
+
+
+

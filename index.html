@@ -16,15 +16,23 @@
 <!-- Header -->
 <header class="header" id="scrollup">
 	<div class="container">
-		<nav class="nav animated fadeInLeft">
-			<ul>
-				<li><a href="https://rabota.ua/cv/15378632">Resume</a></li>
-				<li><a href="#about-me" target="_blank">About me</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contacts">Contacts</a></li>
-			</ul>
-		</nav>
+		<div class="menu" id="menu--hide">
+			<div class="menu__icon animated fadeInLeft">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			</div>
+			<nav class="menu__links nav animated fadeInLeft">
+				<ul class="nav__ul">
+					<li class="nav__li"><a href="https://rabota.ua/cv/15378632" target="_blank">Resume</a></li>
+					<li class="nav__li nav__li--show"><a href="#about-me">About me</a></li>
+					<li class="nav__li nav__li--show"><a href="#skills" class="linksss" >Skills</a></li>
+					<li class="nav__li nav__li--show"><a href="#portfolio">Portfolio</a></li>
+					<li class="nav__li nav__li--show"><a href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 </header>
 
@@ -42,7 +50,7 @@
 			</div>
 			<p class="language"><span>Ru</span> | Eng</p>
 		</div>
-		<div class="fotorama" data-height="500" data-autoplay="true">
+		<div class="fotorama" data-maxheight="500" data-autoplay="true">
 			<img src="../portfolio/img/slider/2.jpg">
 			<img src="../portfolio/img/slider/1.jpg">
 			<img src="../portfolio/img/slider/3.jpg">
@@ -447,6 +455,43 @@
 <!-- Main.js file -->
 	<script src="../portfolio/js/main.js"></script>
 
+	<script>
+
+		(function($){
+			$(function() {
+				$('.menu__icon').on('click', function() {
+				$(this).closest('.menu').toggleClass('menu_state_open');
+					
+				});
+			});
+		})(jQuery);
+
+	</script>
+
+		<!-- <script>
+
+			    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $('.menu_state_open'); // тут указываем класс элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
+        }
+    });
+
+	</script> -->
+
+		<!-- <script>
+
+		(function($){
+			$(function() {
+				$('.linksss').on('click', function() {
+				$(this).closest('.menu').toggleClass('hide--nav');
+				});
+			});
+		})(jQuery);
+
+	</script> -->
 </body>
+</html>
 
 
