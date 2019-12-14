@@ -87,7 +87,7 @@ p {
 	background-color: #643a79;
     padding: 3px 13px;
 	color: #fff;
- 	border-radius: 5px;
+	border-radius: 5px;
 }
 
 .desktop-nav__link:hover:after,
@@ -99,7 +99,7 @@ p {
 	background-color: #643a79;
     padding: 3px 13px;
 	color: #fff;
- 	border-radius: 5px;
+	border-radius: 5px;
 }
 
  /* Mobile and Tablet Navigation */
@@ -209,7 +209,7 @@ p {
 }
 
 #check-menu:checked ~ .burger__logo {
-display: none;
+	display: none;
 }
 
 .burger__logo--mobile {
@@ -521,7 +521,7 @@ display: none;
 	position: relative;
 	background-color: #ebc985;
     padding: 3px 27px;
- 	border-radius: 6px;
+	border-radius: 6px;
 	text-decoration: none;
 	transition: background-color .1s linear;
 }
@@ -542,7 +542,7 @@ display: none;
 .slider__link:hover {
 	background-color: #fff;
     padding: 3px 27px;
- 	border-radius: 6px;
+	border-radius: 6px;
 }
 
 .slider__link:hover:after,
@@ -553,7 +553,7 @@ display: none;
 .slider__link.active {
 	background-color: #fff;
     padding: 3px 27px;
- 	border-radius: 6px;
+	border-radius: 6px;
 }
 
 /* portfolio */
@@ -910,7 +910,7 @@ display: none;
 	}
 
 	.team__skill {
-	 	margin: 35px 25px;
+		margin: 35px 25px;
 	}
 
 	.section--white {
@@ -923,11 +923,11 @@ display: none;
 
 	.section--red {
     	height: 100%;
-	 }
+	}
 
-	 .feedback__input__massage {
-	 	width: 700px;
-	 }
+	.feedback__input__massage {
+		width: 700px;
+	}
 	
 	.feedback__input {
 		width: 334px;
@@ -965,7 +965,7 @@ display: none;
     	font-size: 24px;
 	}
 
-   .services {
+	.services {
 	    flex-wrap: wrap;
 	    justify-content: space-around;
 	}
@@ -975,9 +975,9 @@ display: none;
 	}
 
 	.service__logo {
-	    margin-top: 13px;
-	    margin-bottom: 30px;
-   	}
+		margin-top: 13px;
+		margin-bottom: 30px;
+	}
 
 	.about__us__text {
     	margin-right: 0px; 
@@ -1010,22 +1010,25 @@ display: none;
 	}
 
 	.maket {
-	    text-align: center;
-	    margin-bottom: 35px;
-	    width: 99%;
+		text-align: center;
+		margin-bottom: 35px;
+		width: 99%;
 	}
 
 	.about__us__item {
-	    width: 90%;
-	    padding-left: 175px;
-	    position: relative;
-	    margin-bottom: 50px;
+		width: 90%;
+		padding-left: 175px;
+		position: relative;
+		margin-bottom: 50px;
 	}
 	.feedback__input__massage {
 		width: 90%;
 	}
 	.feedback__input {
-		width: 42%;
+		width: 41%;
+	}
+	.slider__link {
+		margin-bottom: 10px;
 	}
 }
 /* 320px - 576px */

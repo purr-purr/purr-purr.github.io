@@ -18,17 +18,17 @@ body {
   display: flex;
   width: 100%;
   height: auto; }
-  .section__offer {
+  .section--offer {
     height: 495px;
     background: #f74c55 url("../img/bg menu.jpg") no-repeat center;
     background-size: cover; }
-  .section__colors {
+  .section--colors {
     height: 450px;
     color: #333;
     background-color: #fff; }
-  .section__services {
+  .section--services {
     height: 305px; }
-  .section__colorful {
+  .section--colorful {
     height: 500px;
     background: url("../img/last-bg.jpg.png") center no-repeat;
     background-size: cover;
@@ -374,7 +374,7 @@ body {
 
   .services__text {
     padding-bottom: 20px; } }
-/* 660px - 760px */
+/* 500px - 760px */
 @media screen and (max-width: 760px) {
   .colors {
     padding: 30px 20px 0 50px; }
@@ -403,5 +403,16 @@ body {
 
   .offer {
     margin-top: 233px; } }
+/* 370px - 500px */
+@media screen and (max-width: 500px) {
+  .header__logo {
+    margin-left: 36%; } }
+/* 320px - 370px */
+@media screen and (max-width: 370px) {
+  .offer {
+    margin-left: 41%; }
+
+  .burger__wrapper {
+    min-width: 94px; } }
 
 /*# sourceMappingURL=main.css.map */
