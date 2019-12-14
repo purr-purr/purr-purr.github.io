@@ -1,0 +1,12 @@
+@mixin main__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #353738;
+    margin: 25px 0 25px 0;
+}
+
+@mixin main__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #848789;
+}

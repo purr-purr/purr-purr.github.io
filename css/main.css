@@ -55,8 +55,6 @@ body {
 /* NAVIGATION */
 
 
-
-
 .nav {
   padding: 33px 0;
   font-weight: 600;
@@ -168,8 +166,9 @@ body {
   bottom: 10px;
 }
 
-.language span {
+.language a {
   color: #828282;
+  text-decoration: none;
 }
 
 /* Carousel */
@@ -505,7 +504,7 @@ body {
   right: 35px;
   display: none;
   text-indent: -9999px;
-  background: url('../img/icons/Circle-icons-arrow-up.svg') no-repeat;
+  background: url('../assets/img/icons/Circle-icons-arrow-up.svg') no-repeat;
 }
 
 .scrollup:hover {
@@ -525,6 +524,10 @@ body {
   .card-label {
     width: 80%;
   }
+  /* for Russian version */
+  .ru-back {
+    padding: 0 10px;
+  }
 }
 
 /* 560px - 850px */
@@ -542,7 +545,6 @@ body {
     margin: 5px 4px 5px 0px;
     background-color: #828282;
   }
-
   .menu__icon {
     display: inline-block;
     width: 45px;
@@ -551,7 +553,6 @@ body {
     top: 12px;
     cursor: pointer;
   }
-
   .menu__icon span {
     display: block;
     position: absolute;
@@ -564,44 +565,35 @@ body {
     transform: rotate(0deg);
     transition: .25s ease-in-out;
   }
-
   .menu__icon span:nth-child(1) {
     top: 0px;
   }
-
   .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
     top: 13px;
   }
-
   .menu__icon span:nth-child(4) {
     top: 26px;
   }
-
   .menu.menu_state_open .menu__icon span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%;
   }
-
   .menu.menu_state_open .menu__icon span:nth-child(2) {
     transform: rotate(45deg);
   }
-
   .menu.menu_state_open  .menu__icon span:nth-child(3) {
     transform: rotate(-45deg);
   }
-
   .menu.menu_state_open  .menu__icon span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
   }
-
   .menu.menu_state_open .menu__links {
     display: block;
     position: absolute;  
   }
-
   .menu__links {
     position: fixed;
     display: none;
@@ -632,8 +624,11 @@ body {
   .nav__li a:hover::before {
     animation: none; 
   }
+/* for Russian version */
+  .ru-card--margin {
+    padding-bottom: 7px;
+  }
 }
-
 
 /* 450px - 560px */
 @media screen and (max-width: 560px) {
@@ -661,6 +656,12 @@ body {
   .skill__inner {
     flex-basis: 50%;
   }
+  
+/* for Russian version */
+  .ru-back {
+    padding-bottom: 4px;
+    font-size: 18px;
+  }
 }
 
 /* 365px - 450px */
@@ -668,4 +669,26 @@ body {
   .card-label {
     height: 100%;
   }
+/* for Russian version */
+  .ru-title {
+    font-size: 23px;
+  }
+  .ru-back {
+    font-size: 16px;
+  }
+  .tab-frame label {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
+
+/* 365px - 450px */
+@media screen and (max-width: 450px) {
+/* for Russian version */
+  .skill__experience {
+    display: none;
+  }
+}
+
+

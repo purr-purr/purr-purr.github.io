@@ -8,8 +8,7 @@ body {
 *,
 *:before,
 *:after {
-	box-sizing: border-box;/* всегда прописываем для удобства
-	что бы не считать падинги*/
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -24,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
 	width: 100%;
-	max-width: 1170px; /*ширина по сетке*/
+	max-width: 1170px;
 	margin: 0 auto;
 }
 
@@ -48,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container__intro {
 	width: 100%;
-	max-width: 1170px; /*ширина по сетке*/
+	max-width: 1170px;
 	height: auto;
 	margin: 0 auto;
 	position: relative;
@@ -227,17 +226,16 @@ label {
     left: 85%;
 }
 
-
 /*SECTION TWO*/
 
 /*Section Header*/
 
- .section__header {
+.section__header {
     padding-top: 125px;
     padding-bottom: 130px;
- 	text-align: center;
+	text-align: center;
 	text-transform: uppercase;
- }
+}
 
 .section__title {
 	font-size: 30px;
@@ -278,9 +276,6 @@ label {
 	margin-bottom: 30px;
 }
 
-
-
-
 .under__aboutus__img {
 	background-color: #ebecee;
 	height: 410px;
@@ -294,15 +289,15 @@ label {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-
-
-
 /*WEATURED WORKS 3en Section*/
 
 .works {
 	text-align: center;
 	padding-right: 2px;
 	padding-bottom: 2px;
+}
+.works img:hover {
+	opacity: 0.9;
 }
 
 .works:last-child {
@@ -333,28 +328,23 @@ label {
     width: 653px;
     height: 425px;
 	background: #71f6eb;
-
 }
-
-
 
 .example__card__content {
 	position: absolute;
 	top: 11%;
- 	left: 7%;
+	left: 7%;
 	z-index: 99;
 	color: #000;
 	text-align: left;
 }
 
-
 .example__card__title {
-	font-family: 'Merriweather', serif;*/
+	font-family: 'Merriweather', serif;
 	font-weight: 700;
 	font-size: 20px;
 	margin-bottom: 30px;
 	text-transform: uppercase;
-
 }
 
 .example__card__text {
@@ -363,36 +353,34 @@ label {
 	max-width: 420px;
 	color: #1c3e3b;
 	line-height: 1.9;
-
 }
 
 /*Exampl Card END*/
 
 /*Start normal card*/
 .img__card {
-  position: relative;
+	position: relative;
 }
- 
+
 .img__card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);  
-  z-index: 1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);  
+	z-index: 1;
 }
 
 .card__content {
 	position: absolute;
 	top: 42%;
- 	left: 15%;
+	left: 15%;
 	z-index: 99;
 	color: #fff;
 	text-align: left;
 }
-
 
 .card__title {
 	font-family: 'Merriweather', serif;
@@ -400,7 +388,6 @@ label {
 	font-size: 20px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-
 }
 
 .card__text {
@@ -410,7 +397,6 @@ label {
 	line-height: 1.9;
 	opacity: .9;
 	color: #eaecec;
-
 }
 
 .card__btn {
@@ -422,6 +408,7 @@ label {
 	text-decoration: none;
 	background: none;
 	border: none;
+	cursor: pointer;
 	text-transform: uppercase;
 	color: #eaecec;
 	opacity: .9;
@@ -432,11 +419,7 @@ label {
 	color: #333;
 }
 
-
-
 /*the end normal card*/
-
-
 
 /* SMALL TEAM 5en Section*/
 
@@ -451,9 +434,12 @@ label {
 	padding-bottom: 0;
 }
 
+.team-item:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
 /* 6en Section */
-
-
 
 .whatsays {
 	display: flex;
@@ -514,7 +500,6 @@ label {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-
 .stars {
 	padding-top: 30px;
 	text-align: center;
@@ -534,16 +519,18 @@ label {
     align-items: center;
 }
 
+.second__line img:hover, .first__line img:hover {
+	opacity: 0.8;
+}
+
 .fix__bad_size {
 	padding-top: 12px;
 }
-
 
 .both__logos {
 	max-width: 1170px;
 	margin: 0 auto;
 }
-
 
 /*feedback__section*/
 
@@ -560,6 +547,7 @@ label {
 .allinput {
 	display: inline-grid;
 	margin-top: 25px;
+	width: 100%;
 }
 
 .form {
@@ -568,7 +556,7 @@ label {
 	width: 615px;
 	margin-top: 130px;
 	margin-right: 28px;
-	background: rgba(0, 0, 10, 0.5);
+	background: rgba(38, 61, 75, 0.88);
 	text-align: left;
 }
 
@@ -577,15 +565,20 @@ label {
     margin-left: 30px;
     padding-bottom: 15px;
     padding-top: 25px;
-    width: 550px;
+    width: 88%;
     background: none;
     border: 0;
     border-bottom: 1px solid #8d959a;
+	color: rgba(255, 255, 255, 0.9);
+	
 }
 
 .feedback__input::placeholder {
 	color: #d1d4d7;
+}
 
+.feedback__input:focus {
+	border: none;
 }
 
 .form__btn {
@@ -596,6 +589,7 @@ label {
 	font-size: 18px;
 	font-weight: 600;
 	text-decoration: none;
+	cursor: pointer;
 	color: #214744;
 	margin-top: 40px;
 	background-color: #6eeee4;
@@ -611,7 +605,7 @@ label {
 	height: 460px;
 	width: 500px;
 	margin-top: 130px;
-	background: rgba(0, 0, 10, 0.5);
+	background: rgba(38, 61, 75, 0.88);
 }
 
 .adress {
@@ -622,11 +616,12 @@ label {
 	color: #d1d4d7;
 }
 
-.map__img {
+iframe {
 	margin-top: 25px;
 	margin-left: 30px;
+	width: 443px;
+	height: 224px;
 }
-
 
 /*FOOTER*/
 
@@ -634,7 +629,6 @@ label {
 	background-color: #262b2e;
 	height: 310px;
 }
-
 
 .follow__us {
 	font-family: 'Raleway', sans-serif;
@@ -667,12 +661,9 @@ label {
 	padding-right: 10px;
 }
 
-
 .footer__link:last-child {
 	margin-right: 0;
 }
-
-
 
 .footer__link:hover {
 	background-color: #6eeee4;
@@ -685,9 +676,163 @@ label {
 	font-size: 16px;
 }
 
+/* 1000px - 1150px */
+@media screen and (max-width: 1150px) {
+	.container {
+		padding: 0 15px;
+	}
+	.services {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		max-width: 68%;
+		margin: 0 auto;
+	}
+	.under__aboutus__img {
+		background-color: transparent;
+	}
 
+}
+/* 850px - 100px */
+@media screen and (max-width: 1000px) {
+	.section__two {
+		height: auto;
+	}
+	.whatsays {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.whatsays__info {
+		margin-left: 0;
+		margin-top: 50px;
+		margin: 50px 0;
+	}
+	iframe {
+		width: 86%;
+		height: 48%;
+	}
+}
 
+/* 750px - 850px */
+@media screen and (max-width: 850px) {
+	.container__header {
+		padding: 0 15px;
+	}
+	.about__us {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.info {
+		padding-top: 80px;
+		margin-left: 0; 
+		text-align: center;
+	}
+	.card, .card__example {
+		width: 100%;
+	}
+	.card img {
+		width: 100%;
+	}
+	.card__btn {
+		margin-top: 34px;
+	}
+	.card__content {
+		top: 35%;
+	}
+	.second__line, .first__line {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.feedback__section {
+		height: auto;
+	}
+	.feedback {
+		margin-top: 0;
+		flex-wrap: wrap;
+	}
+	.form, .map {
+		flex-grow: 1;
+		margin-right: 0;
+	}
+	.map {
+		margin-bottom: 30px;
+	}
 
+}
+/* 550px - 750px */
+@media screen and (max-width: 750px) {
+	.services {
+		max-width: 100%;
+	}
+	.card {
+		margin-right: 0;
+	}
+	.glass {
+		left: 75%;
+	}
+}
+
+/* 400px - 550px */
+@media screen and (max-width: 550px) {
+	.whatsays__info {
+		padding-left: 0;
+	}
+	.about__info {
+		position: relative;
+		margin: 0 30px;
+	}
+	.card__content {
+		top: 18%;
+	}
+	.glass {
+		display: none;
+	}
+	.under__aboutus__img {
+		width: 100%;
+		height: auto;
+	}
+	.aboutus__img {
+		width: 82%;
+	}
+}
+
+/* 320px - 400px */
+@media screen and (max-width: 400px) {
+	.card__example {
+		display: none;
+	}
+	.works img {
+		width: 100%;
+	}
+	.card--hide {
+		display: none;
+	}
+	.under__img {
+		background-color: transparent;
+		height: 100%;
+		width: 100%;
+	}
+	.whatsays__img {
+		left: 5%;
+	}
+	.title {
+		display: block; 
+		left: 0;
+		text-align: center;
+	}
+	.whatsays__title {
+		margin-bottom: 0;
+	}
+	.stars {
+		padding-top: 10px;
+	}
+	.team-item, .whatsays__img {
+		width: 90%
+	}
+	.whatsays__info {
+		padding-top: 50px;
+	}
+}
 
 
 
