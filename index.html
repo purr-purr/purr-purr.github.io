@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel=”icon” href=””> 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="../portfolio/img/icons/icons8-user-48.png">
 </head>
 <body>
 <!-- Header -->
 <header class="header" id="scrollup">
 	<div class="container">
-		<div class="menu" id="menu--hide">
+		<div class="menu">
 			<div class="menu__icon animated fadeInLeft">
 			<span></span>
 			<span></span>
@@ -25,11 +25,11 @@
 			</div>
 			<nav class="menu__links nav animated fadeInLeft">
 				<ul class="nav__ul">
-					<li class="nav__li"><a href="https://rabota.ua/cv/15378632" target="_blank">Resume</a></li>
-					<li class="nav__li nav__li--show"><a href="#about-me">About me</a></li>
-					<li class="nav__li nav__li--show"><a href="#skills" class="linksss" >Skills</a></li>
-					<li class="nav__li nav__li--show"><a href="#portfolio">Portfolio</a></li>
-					<li class="nav__li nav__li--show"><a href="#contacts">Contacts</a></li>
+					<li class="nav__li"><a href="https://rabota.ua/cv/15378632" target="_blank" class="hide-menu">Resume</a></li>
+					<li class="nav__li"><a href="#about-me" class="hide-menu">About me</a></li>
+					<li class="nav__li"><a href="#skills" class="hide-menu" >Skills</a></li>
+					<li class="nav__li "><a href="#portfolio" class="hide-menu">Portfolio</a></li>
+					<li class="nav__li "><a href="#contacts" class="hide-menu">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -454,43 +454,6 @@
 	<script src="https://kit.fontawesome.com/5e926ca2ef.js" crossorigin="anonymous"></script>
 <!-- Main.js file -->
 	<script src="../portfolio/js/main.js"></script>
-
-	<script>
-
-		(function($){
-			$(function() {
-				$('.menu__icon').on('click', function() {
-				$(this).closest('.menu').toggleClass('menu_state_open');
-					
-				});
-			});
-		})(jQuery);
-
-	</script>
-
-		<!-- <script>
-
-			    $(document).mouseup(function (e){ // событие клика по веб-документу
-        var div = $('.menu_state_open'); // тут указываем класс элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            div.hide(); // скрываем его
-        }
-    });
-
-	</script> -->
-
-		<!-- <script>
-
-		(function($){
-			$(function() {
-				$('.linksss').on('click', function() {
-				$(this).closest('.menu').toggleClass('hide--nav');
-				});
-			});
-		})(jQuery);
-
-	</script> -->
 </body>
 </html>
 

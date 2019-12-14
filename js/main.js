@@ -35,10 +35,19 @@ $(document).ready(function(){
     });
 
 
-    // $(".nav__li--show").click(function(){
-    //     $(".menu_state_open").removeClass("menu_state_open"); return false;
-    // });
+// Mobile Navigation
 
+    (function($){
+			$(function() {
+				$('.menu__icon').on('click', function() {
+				$(this).closest('.menu').toggleClass('menu_state_open');
+
+                    $('.hide-menu').on('click', function() {
+                    $(this).closest('.menu').toggleClass('menu_state_open');
+                    });
+				});
+			});
+	})(jQuery);
 });;
 
 
