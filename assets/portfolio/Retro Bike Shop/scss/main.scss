@@ -58,7 +58,7 @@ body {
     letter-spacing: 4px;
     padding-bottom: 10px;
   }
-  &__link:hover, .active {
+  &__link:hover {
     border-bottom: 2px solid #64c29e;
     padding-bottom: 10px;
     transition: .1s;

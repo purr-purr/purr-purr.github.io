@@ -481,9 +481,11 @@ body {
 .icon__linkedin:hover {
   fill: #2867B2;
 }
+
 .icon__instagram:hover {
   fill: #E1306C;
 }
+
 .icon__github:hover {
   fill: #828282;
 }
@@ -690,5 +692,3 @@ body {
     display: none;
   }
 }
-
-

@@ -757,6 +757,9 @@ iframe {
 	.map {
 		margin-bottom: 30px;
 	}
+	.first__line {
+		display: none;
+	}
 
 }
 /* 550px - 750px */

@@ -54,7 +54,7 @@ body {
     color: #4d4959;
     letter-spacing: 4px;
     padding-bottom: 10px; }
-  .desktop-nav__link:hover, .desktop-nav .active {
+  .desktop-nav__link:hover {
     border-bottom: 2px solid #64c29e;
     padding-bottom: 10px;
     -webkit-transition: .1s;
