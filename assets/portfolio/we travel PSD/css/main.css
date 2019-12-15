@@ -351,6 +351,9 @@ html {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+
+  .footer {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
