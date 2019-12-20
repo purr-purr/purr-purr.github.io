@@ -338,10 +338,6 @@ body {
   margin-bottom: 30px;
 }
 
-.skill__logo {
-  width: 100px;
-  height: 100px;
-}
 .skill__inner:hover .star {
   color: goldenrod;
 }
