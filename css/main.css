@@ -651,6 +651,9 @@ body {
   .ru-card--margin {
     padding-bottom: 7px;
   }
+  .short-info {
+    margin-right: 20px;
+  }
 }
 
 /* 470px - 560px */
