@@ -231,7 +231,7 @@ body {
   border-radius: 2px;
 }
 
-.card .back {
+.card .card__back {
   background: #222;
   color: #FFF;
   -webkit-transform: rotateX(180deg);
@@ -259,8 +259,10 @@ body {
   box-shadow: 0 20px 20px rgba(255,255,255,.2);
 }
 
-.btn-mouse {
+.button__click {
   margin-top: 8%;
+  width: 30px;
+  height: 38px;
 }
 
 .card--margin {
@@ -336,6 +338,10 @@ body {
   margin-bottom: 30px;
 }
 
+.skill__logo {
+  width: 100px;
+  height: 100px;
+}
 .skill__inner:hover .star {
   color: goldenrod;
 }
@@ -377,22 +383,27 @@ body {
   padding-bottom: 70px;
 }
 
-.portfolio__liks {
+.portfolio__links {
   margin-top: 10px;
 }
-.portfolio__liks a {
+.portfolio__links a {
   text-decoration: none;
 }
-.portfolio__liks img:hover {
+.portfolio__links img:hover {
   transform: scale(1.05);
   transition: .3s
 }
-.portfolio__liks p {
+.portfolio__links p {
   font-size: 17px;
   margin-bottom: 5px;
 }
 .portfolio__liks p span {
   font-weight: 500;
+}
+
+.portfolio__icons {
+  width: 35px;
+  height: 35px;
 }
 
 .layout {
@@ -478,6 +489,10 @@ body {
   color: #000;
 }
 
+.icon__github, .icon__linkedin, .icon__instagram {
+  width: 60px;
+  height: 60px;
+}
 .icon__linkedin:hover {
   fill: #2867B2;
 }
@@ -514,20 +529,26 @@ body {
 }
 
 /* RESPONSIVE */
+/* 950px - 1030px */
+@media screen and (max-width: 1030px) {
+  .title {
+    padding-top: 15px;
+  }
+}
 
 /* 850px - 950px */
 @media screen and (max-width: 950px) {
   .container {
     padding: 0 10px;
   }
-  .title {
+  /* .title {
     padding-top: 15px;
-  }
+  } */
   .card-label {
     width: 80%;
   }
   /* for Russian version */
-  .ru-back {
+  .card__back--ru {
     padding: 0 10px;
   }
 }
@@ -632,7 +653,7 @@ body {
   }
 }
 
-/* 450px - 560px */
+/* 470px - 560px */
 @media screen and (max-width: 560px) {
   .info {
     flex-wrap: wrap;
@@ -660,36 +681,60 @@ body {
   }
   
 /* for Russian version */
-  .ru-back {
+  .card__back--ru {
     padding-bottom: 4px;
     font-size: 18px;
   }
 }
 
-/* 365px - 450px */
-@media screen and (max-width: 450px) {
+/* 360px - 470px */
+@media screen and (max-width: 470px) {
   .card-label {
     height: 100%;
   }
 /* for Russian version */
-  .ru-title {
+  .title--ru {
     font-size: 23px;
   }
-  .ru-back {
+  .card__back--ru {
     font-size: 16px;
+  }
+  .ru-card--margin {
+    padding-bottom: 15px;
   }
   .tab-frame label {
     display: flex;
     flex-grow: 1;
     justify-content: center;
   }
-}
-
-/* 365px - 450px */
-@media screen and (max-width: 450px) {
-/* for Russian version */
   .skill__experience {
     display: none;
+  }
+}
+
+/* 320px - 360px */
+@media screen and (max-width: 360px) {
+  .button__click {
+    display: none;
+  }
+  .ru-card--margin {
+    padding-bottom: 7px;
+  }
+  .text {
+    margin-top: 0px;
+  }
+  .title {
+    padding-top: 8px;
+    font-size: 29px;
+  }
+  .card--margin {
+    padding-bottom: 10px;
+  }
+  .card__back p {
+    font-size: 18px;
+  }
+  .card__back--ru p {
+    font-size: 15px;
   }
 }
 
