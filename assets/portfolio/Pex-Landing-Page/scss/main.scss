@@ -17,32 +17,7 @@ body {
   box-sizing: border-box;
 }
 
-/* all section */
-
-.header {
-  width: 100%;
-  max-width: 1600px;
-  height: 890px;
-  background: url('../img/first_bg.png') center center no-repeat;
-  background-size: cover;
-}
-
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-  &__header {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  &__purple {
-    max-width: 1600px;
-    height: 550px;
-    background-color: rgba(82, 37, 98, 0.8);
-  }
-  &__white {
-    max-width: 1600px;
-  }
-}
+// Section
 
 .section {
   width: 100%;
@@ -63,7 +38,37 @@ body {
 }
 /* the end all section */
 
+// Container
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  &__header {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  &__purple {
+    max-width: 1600px;
+    height: 550px;
+    background-color: rgba(82, 37, 98, 0.8);
+  }
+  &__white {
+    max-width: 1600px;
+  }
+}
+
+// Header
+
+.header {
+  width: 100%;
+  max-width: 1600px;
+  height: 890px;
+  background: url('../img/first_bg.png') center center no-repeat;
+  background-size: cover;
+}
+
 // navigation
+
 .nav {
   padding: 30px 30px 30px;
   border-bottom: 1px solid #413140;
@@ -95,7 +100,7 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  &__link:hover, .active {
+  &__link:hover {
     border-bottom: 3px solid #fff;
     padding-bottom: 40px;
     transition: .1s;
@@ -625,7 +630,7 @@ body {
     padding: 20px 25px;
   }
   .rush {
-    padding: 15px 0 15px;
+    padding: 45px 0 15px;
     &__button {
       padding: 20px 27px;
     }

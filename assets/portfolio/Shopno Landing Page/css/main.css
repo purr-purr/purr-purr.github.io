@@ -448,20 +448,19 @@ label {
 .whatsays__info {
 	height: 360px;
     width: 666px;
-    padding-top: 100px;
-    padding-left: 85px;
+    padding: 75px;
     margin-left: 85px;
     background-color: #eaebed;
 }
 
 .about__info {
-	position: absolute;
+	max-width: 465px;
+    margin: 0 auto;
 }
 
 .title {
-	display: inline-flex;
-	position: relative;
-    left: 23%;
+    display: flex;
+    justify-content: center;
 }
 
 .whatsays__title {
@@ -617,8 +616,7 @@ label {
 }
 
 iframe {
-	margin-top: 25px;
-	margin-left: 30px;
+	margin: 29px;
 	width: 443px;
 	height: 224px;
 }
@@ -778,10 +776,9 @@ iframe {
 /* 400px - 550px */
 @media screen and (max-width: 550px) {
 	.whatsays__info {
-		padding-left: 0;
+		padding: 30px;
 	}
 	.about__info {
-		position: relative;
 		margin: 0 30px;
 	}
 	.card__content {
@@ -832,8 +829,11 @@ iframe {
 	.team-item, .whatsays__img {
 		width: 90%
 	}
-	.whatsays__info {
-		padding-top: 50px;
+	.whatsays__subtitle span {
+		display: none;
+	}
+	.whatsays__text {
+		font-size: 14px;
 	}
 }
 
